@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lim version="5.6.3">
+    <config>
+          <recursos>$C:\Users\ESTUDIANTE\Downloads\cRISTINA\</recursos>
+        <idioma>0</idioma>
+        <licencia></licencia>
+          <corfondo>62C4F2</corfondo>
+        <corbanda>3161B9</corbanda>
+        <cornavega>3161B9</cornavega>
+        <cormensaxes>000000</cormensaxes>
+          <cortexto>000000</cortexto>
+          <titulo>Operaciones</titulo>
+          <subtitulo>Sumas y restas</subtitulo>
+          <autor>Cristina Campo</autor>
+        <logo>..\..\..\cRISTINA\images.png</logo>
+          <imaxefondo posx="0" posy="0" trans="100">..\..\..\cRISTINA\vinilos-fondo-del-vector-de-numeros.jpg.jpg</imaxefondo>
+          <informe>0</informe>
+          <botonson>0</botonson>
+          <maximizar>0</maximizar>
+        <desordenar>0</desordenar>
+        <correcto son="..\..\..\cRISTINA\Duolingo - Sound Effetcs.mp3" modo="1" >¡Lo lograste!</correcto>
+        <incorrecto son="..\..\..\cRISTINA\EFECTO SONIDO RETROCEDER CINTA - Sonido Independiente. (youtube).mp3" modo="1" >Sé que puedes volver a intentarlo.</incorrecto>
+    </config>
+    <libro>
+        <paxina id="1" >
+              <tipo>2</tipo>
+              <imaxe posx="331" posy="34">..\..\..\cRISTINA\hq720.jpg</imaxe>
+              <texto posx="309" posy="346" ancho="445" largo="366"><![CDATA[
+<p align="center">
+<font color="#000080" face="Copperplate Gothic Bold" size="32">LA VIDA SON MATEMÁTICAS<br>
+</font><font color="#080000" face="Rockwell Condensed" size="20">Lo que no te SUMA, te RESTA</font></p>
+]]></texto>
+              <ctexto>59A6CA</ctexto>
+              <chtml>1</chtml>
+        </paxina>
+        <paxina id="2" >
+              <tipo>3</tipo>
+              <imaxe>..\..\..\cRISTINA\unnamed.png</imaxe>
+              <filas>5</filas>
+              <columnas>5</columnas>
+              <reixa>1</reixa>
+            <forma>1</forma>
+        </paxina>
+        <paxina id="3" >
+              <tipo>11</tipo>
+              <modo>1</modo>
+              <cousa nome="3">..\..\..\cRISTINA\1.jpg</cousa>
+              <cousa nome="8">..\..\..\cRISTINA\2.jpg</cousa>
+              <cousa nome="9">..\..\..\cRISTINA\3.jpg</cousa>
+              <cousa nome="10">..\..\..\cRISTINA\4.jpg</cousa>
+        </paxina>
+        <paxina id="4" >
+              <tipo>17</tipo>
+              <parellas>..\..\..\cRISTINA\png-transparent-plus-and-minus-signs-addition-mathematics-plus-rectangle-plus-cross.png</parellas>
+              <parellas>..\..\..\cRISTINA\gggg.png</parellas>
+              <cfondo>62C4F2</cfondo>
+              <ctapa>000000</ctapa>
+              <tempo>10</tempo>
+        </paxina>
+        <paxina id="5" >
+              <tipo>20</tipo>
+              <imaxe>..\..\..\cRISTINA\8.jpg</imaxe>
+              <modo>3</modo>
+              <etiqueta posx="87" posy="255">2</etiqueta>
+              <etiqueta posx="91" posy="33">4</etiqueta>
+              <etiqueta posx="89" posy="166">2</etiqueta>
+              <etiqueta posx="92" posy="96">1</etiqueta>
+        </paxina>
+        <paxina id="6" >
+              <tipo>31</tipo>
+              <valor texto="Vas caminando y te encuentras algunos billetes en la calle. Sorprendido los recoges y miras a tu alrededor. Al parecer no tiene dueño. Cuentas el monto y de das cuenta que son $145.000 pesos. Arma con los billetes este valor. ">145000</valor>
+              <etiqueta imaxe="..\..\..\cRISTINA\096b485be809207630c080d799507f42.jpg" texto="Cinco mil">5000</etiqueta>
+              <etiqueta imaxe="..\..\..\cRISTINA\752img0.jpg" texto="Veinte mil">20000</etiqueta>
+              <etiqueta imaxe="..\..\..\cRISTINA\5e9d4cc74d2544.32182823-original.jpg" texto="cincuenta mil">50000</etiqueta>
+              <etiqueta imaxe="..\..\..\cRISTINA\reverso100000.jpg" texto="Cien mil">100000</etiqueta>
+        </paxina>
+        <paxina id="7" >
+              <tipo>26</tipo>
+              <modo>0</modo>
+              <forma>+</forma>
+              <numero>15000</numero>
+              <numero>5000</numero>
+        </paxina>
+        <paxina id="8" >
+              <tipo>2</tipo>
+              <pe>Observa el siguiente video:</pe>
+              <texto posx="171" posy="61" ancho="492" largo="223"><![CDATA[<font size="12"><iframe width="560" height="315" src="https://www.youtube.com/embed/bIeSkGXMclA?si=0gwucDs-N9S6T1WB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></font>]]></texto>
+              <ctexto>000000</ctexto>
+              <chtml>1</chtml>
+        </paxina>
+        <paxina id="9" >
+              <tipo>26</tipo>
+              <modo>0</modo>
+              <forma>-</forma>
+              <numero>50000</numero>
+              <numero>25000</numero>
+        </paxina>
+    </libro>
+</lim>

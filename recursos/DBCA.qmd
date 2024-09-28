@@ -1,0 +1,97 @@
+---
+title: "DBCA"
+author: "Miguel Vasquez"
+format: docx
+editor: visual
+---
+
+## Descripcion:
+
+-   Objetivo: evalual el impacto de distintas fuentes de nitrogeno sobre la produccion de materia seca en cultivos de cebada forrajera
+
+-   pregunta problema: ¿Cual es el impacto de distintas fuentes de nitrogeno sobre la produccion de materia seca en cultivos de cebada forrajera?
+
+-   Elementos del diseño: se tiene un diseño de bloque completamente aleatorio con factor de interes (fuente de nitrogeno) y 6 niveles (urea, sulfato de amonio, nitrato de amonio, nitrato de Ca, nitrato de Na, control). se realizaron 4 replicas por tratamiento 4 parcelas con diferente tipo de suelo, para un total de 24 corridas.
+
+-   Hipotesis principal - Factor (fuente de nitrogeno).
+
+Nula: El efecto de la fuente de nitrogeno sobre la produccion de materia seca es el mismo en todos los niveles
+
+Alterna: El efecto de la fuente de nitrogeno sobre la produccion de materia seca es diferente entre al menos un par de niveles.
+
+-   Hipotesis secundaria- Factor (tipo de suelo).
+
+    Nula: El efecto del tipo de suelo sobre la produccion de materia seca es el mismo en todos los niveles
+
+    Alterna: El efecto del tipo de suelo sobre la produccion de materia seca es diferente entre al menos un par de niveles.
+
+## Librerias:
+
+```{r}
+library(ggplot2) 
+library(tidyverse) 
+library(agricolae) 
+library(descriptr)
+library(ggpubr)
+library(lmtest)
+library(pwr)
+library(effectsize)
+library(readxl)
+
+```
+
+## Datos:
+
+```{r}
+Datos<-read_excel("C:/Users/ESTUDIANTE/Downloads/cRISTINA/juego/recursos/Materia_seca.xlsx")
+Datos$fuente<-as.factor(Datos$fuente)
+Datos$suelo<-as.factor(Datos$suelo)
+```
+
+## Resumen numerico:
+
+```{r}
+trs<-ds_group_summary(Datos,fuente,M.S)
+trs$stats
+```
+
+## Creación del modelo.
+
+```{r}
+modelo<-aov(formula = M.S~fuente+suelo,data = Datos)
+shapiro.test(modelo$residuals)
+bartlett.test(modelo$residuals~Datos$fuente)
+dwtest(modelo,alternative="two.sided")
+```
+
+El análisis de varianza arrojo un valor p menor al nivel de significancia. Este resultado sugiere que hay diferencias en la producción de materia seca entre al menos un par de fuentes de nitrogeno como entre al menos un par de tipo de suelo.
+
+## Prueba de múltiples rangos -LSD factor.
+
+```{r}
+LSD<-LSD.test(y = modelo,trt = "fuente")
+LSD
+bloq<-LSD.test(y = modelo,trt = "suelo")
+bloq
+```
+
+Con la prueba de multiples rangos por minimas diferencias de fisher, se determino que con sulfato de amonio la producción de materia seca es significativamente mayor, en comparación al resto de tratamientos. Estima que con esta fuente la producción oscile entre 34.9-38.1 kg/m².
+
+I su vez se determino que las parcelas con el tipo de suelo 3 lograron una producción significal
+
+GRAFICAS.
+
+```{r}
+## Barras de media.
+medias <- LSD$means
+medias$factor <- rownames(medias)
+grupos<-LSD$groups
+means<-left_join(medias, grupos, by = join_by(M.S))
+ggplot(means, aes(x = factor, y = M.S)) +
+  geom_bar(stat = "identity", color = "black", fill = "tan", width = 0.4) +
+  geom_errorbar(aes(ymin = M.S - se, ymax = M.S+ se), 
+                width = 0.05) +
+  geom_text(aes(label = groups), vjust = -4, size = 4) +
+  labs(x = "Fuente de nitrógeno", y = "Materia seca (kg/m²)")+
+  theme_classic()+ylim(c(0,max(means$Materia_Seca)+5))
+```
