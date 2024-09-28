@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lim version="5.6.4">
+    <config>
+        <recursos>recursos</recursos>
+        <idioma>0</idioma>
+        <licencia></licencia>
+        <corfondo>62C4F2</corfondo>
+        <corbanda>3161B9</corbanda>
+        <cornavega>3161B9</cornavega>
+        <cormensaxes>000000</cormensaxes>
+        <cortexto>000000</cortexto>
+        <titulo>Operaciones</titulo>
+        <subtitulo>Sumas y restas</subtitulo>
+        <autor>Cristina Campo</autor>
+        <logo>images.png</logo>
+        <imaxefondo posx="0" posy="0" trans="100">vinilos-fondo-del-vector-de-numeros.jpg.jpg</imaxefondo>
+        <informe>0</informe>
+        <botonson>0</botonson>
+        <maximizar>0</maximizar>
+        <desordenar>0</desordenar>
+        <correcto son="Duolingo_-_Sound_Effetcs.mp3" modo="1" >¡Lo lograste!</correcto>
+        <incorrecto son="EFECTO_SONIDO_RETROCEDER_CINTA_-_Sonido_Independiente._(youtube).mp3" modo="1" >Sé que puedes volver a intentarlo.</incorrecto>
+    </config>
+    <libro>
+        <paxina id="1" >
+              <tipo>2</tipo>
+              <imaxe posx="331" posy="34">hq720.jpg</imaxe>
+              <texto posx="309" posy="346" ancho="445" largo="366"><![CDATA[
+<p align="center">
+<font color="#000080" face="Copperplate Gothic Bold" size="32">LA VIDA SON MATEMÁTICAS<br>
+</font><font color="#080000" face="Rockwell Condensed" size="20">Lo que no te SUMA, te RESTA</font></p>
+]]></texto>
+              <ctexto>59A6CA</ctexto>
+              <chtml>1</chtml>
+        </paxina>
+        <paxina id="2" >
+              <tipo>15</tipo>
+              <cfondo>84E1FD</cfondo>
+              <ctexto>000000</ctexto>
+              <menu boton="La adición" imaxe="12.jpg"><![CDATA[]]></menu>
+              <menu boton="La sustracción" imaxe="13.png"><![CDATA[]]></menu>
+              <chtml>1</chtml>
+        </paxina>
+        <paxina id="3" >
+              <tipo>28</tipo>
+              <boton texto="Video">4</boton>
+              <boton texto="Suma de billetes">5</boton>
+              <boton texto="Ejercicio de sumas">6</boton>
+              <boton texto="Ejercicio de restas">7</boton>
+              <boton texto="Repasa las sumas">https://www.liveworksheets.com/w/es/matematicas/642468</boton>
+              <boton texto="Repasa las restas">https://www.liveworksheets.com/w/es/matematicas/140320</boton>
+        </paxina>
+        <paxina id="4" >
+              <tipo>2</tipo>
+              <pe>Observa el siguiente video:</pe>
+              <texto posx="171" posy="61" ancho="492" largo="223"><![CDATA[<font size="12"><iframe width="560" height="315" src="https://www.youtube.com/embed/bIeSkGXMclA?si=0gwucDs-N9S6T1WB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></font>]]></texto>
+              <ctexto>000000</ctexto>
+              <chtml>1</chtml>
+        </paxina>
+        <paxina id="5" >
+              <tipo>31</tipo>
+              <valor texto="Vas caminando y te encuentras algunos billetes en la calle. Sorprendido los recoges y miras a tu alrededor. Al parecer no tiene dueño. Cuentas el monto y de das cuenta que son $145.000 pesos. Arma con los billetes este valor. ">145000</valor>
+              <etiqueta imaxe="096b485be809207630c080d799507f42.jpg" texto="Cinco mil">5000</etiqueta>
+              <etiqueta imaxe="752img0.jpg" texto="Veinte mil">20000</etiqueta>
+              <etiqueta imaxe="5e9d4cc74d2544.32182823-original.jpg" texto="cincuenta mil">50000</etiqueta>
+              <etiqueta imaxe="reverso100000.jpg" texto="Cien mil">100000</etiqueta>
+        </paxina>
+        <paxina id="6" >
+              <tipo>26</tipo>
+              <pe>Resuelve la siguiente suma</pe>
+              <modo>0</modo>
+              <forma>+</forma>
+              <numero>15000</numero>
+              <numero>5000</numero>
+        </paxina>
+        <paxina id="7" >
+              <tipo>26</tipo>
+              <pe>Resuelve la siguiente resta</pe>
+              <modo>0</modo>
+              <forma>-</forma>
+              <numero>50000</numero>
+              <numero>25000</numero>
+        </paxina>
+    </libro>
+</lim>
